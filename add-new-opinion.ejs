@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+    <link rel="icon" href="/img/logo.png">
+
+    <!-- Other head elements -->
+
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body id="body">
+
+
+    <%- include("./partials/header") %>
+        <main id="main">
+            <div class="opinionnnn">
+                <section>
+                    <h1>
+                        create new review
+                    </h1>
+                    <form id="opinionForm" action="/add-new-opinion" method="post">
+
+                        <input name="reviews" placeholder="Your review" id="reviews" type="text " required>
+
+
+                        <input name="name1" placeholder="Your name" id="name1" type="text">
+
+
+                        <input name="country" placeholder="Your country" id="country" type="text"></input>
+                        <button class="create">create </button>
+                    </form>
+                </section>
+
+
+
+            </div>
+        </main>
+        <%- include("./partials/footer") %>
+</body>
+
+</html>
